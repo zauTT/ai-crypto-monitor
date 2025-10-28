@@ -1,0 +1,1 @@
+#new project: ai-crypto-monitor
