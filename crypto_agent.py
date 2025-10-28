@@ -17,9 +17,9 @@ agent = Agent[CryptoSummary](
     ),
 )
 
-def summerize_crypto(text: str) -> CryptoSummary:
+def summarize_crypto(text: str) -> CryptoSummary:
     """
-    Runs the agent on a crypto trend text and returns stuctured summery.
+    Run the agent on a crypto trend text and returns stuctured summery.
     """
     response = agent.run_sync(text)
     print("\n🧠 Raw AI output:", response.output)
