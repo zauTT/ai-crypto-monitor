@@ -24,11 +24,11 @@ def log_crypto_data(btc: float, eth: float, summary: str, sentiment: str, reason
         worksheet = spreadsheet.worksheet("AI_Crypto_Log")
     except gspread.WorksheetNotFound:
         worksheet = spreadsheet.add_worksheet(title="AI_Crypto_Log", rows="1000", cols="6")
-        worksheet.append_row(["Timestamp", "BTC (USD)", "ETH (USD)", "Summary", "Sentiment", "Reasoning"])
+        worksheet.append_row(["Timestamp", "BTC (USD)", "ETH (USD)", "Sentiment", "Reasoning", "Summary"])
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    worksheet.append_row([timestamp, btc, eth, summary, sentiment, reasoning])
+    worksheet.append_row([timestamp, btc, eth, sentiment, reasoning, summary])
     print(f"✅ Logged to AI_Crypto_Log at {timestamp}")
 
 
