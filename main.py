@@ -24,7 +24,7 @@ def analyze_crypto(btc, eth):
     print("\n🧠 AI Summary:")
     print(result.summary)
     print("📊 Sentiment:", result.sentiment)
-    log_crypto_data(btc, eth, summary=result.summary, sentiment=result.sentiment)
+    log_crypto_data(btc, eth, summary=result.summary, sentiment=result.sentiment, reasoning=result.reasoning)
     return result
 
 def main():
