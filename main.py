@@ -1,6 +1,7 @@
 import requests
 from crypto_agent import summarize_crypto
 from dotenv import load_dotenv
+from crypto_logger import log_crypto_data
 
 load_dotenv()
 
@@ -23,6 +24,7 @@ def analyze_crypto(btc, eth):
     print("\n🧠 AI Summary:")
     print(result.summary)
     print("📊 Sentiment:", result.sentiment)
+    log_crypto_data(btc, eth, summary=result.summary, sentiment=result.sentiment)
     return result
 
 def main():
