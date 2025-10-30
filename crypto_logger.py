@@ -30,5 +30,3 @@ def log_crypto_data(btc: float, eth: float, summary: str, sentiment: str, reason
 
     worksheet.append_row([timestamp, btc, eth, sentiment, reasoning, summary])
     print(f"✅ Logged to AI_Crypto_Log at {timestamp}")
-
-
