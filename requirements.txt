@@ -1,0 +1,18 @@
+# API and Web
+requests>=2.31.0
+
+# AI and Data Validation
+pydantic>=2.0.0
+pydantic-ai>=0.0.1
+
+# OpenAI
+openai>=1.0.0
+
+# Google Sheets Integration
+gspread>=5.11.0
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+
+# Environment Variables
+python-dotenv>=1.0.0

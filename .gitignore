@@ -4,5 +4,8 @@ __pycache__/
 
 # Ignore virtual environments
 venv/
-*.json
+crypto_creds.json
 .env
+
+# macOS system files
+.DS_Store
